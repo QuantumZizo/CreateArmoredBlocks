@@ -20,6 +20,11 @@ public class CreateArmoredBlocks {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
+
+        CABBlocks.register();
+        CABCreativeTab.register(modEventBus);
+
+        REGISTRATE.registerEventListeners(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

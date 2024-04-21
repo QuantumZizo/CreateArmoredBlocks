@@ -1,0 +1,9 @@
+// 1.20.1	2024-04-21T12:00:43.268967	Registrate Provider for createarmoredblocks [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
+c51267dfd732619d0f503773486f120de1c7e90e assets/createarmoredblocks/blockstates/cast_iron_armor_block.json
+6aa96d3f76766f3532dad46f855ad050a59d54b5 assets/createarmoredblocks/lang/en_ud.json
+70a8315dcd7b3fb4a967f7c5a591c2fa09c73335 assets/createarmoredblocks/lang/en_us.json
+775331aac1f9d6fa95c4bce1c859e05c5854f58f assets/createarmoredblocks/models/block/cast_iron_armor_block.json
+be40ae8b744582f11d16ea5dd5ad3e2e9b90113a assets/createarmoredblocks/models/item/cast_iron_armor_block.json
+37d4d7e63a52d3e54a9565ff561e6786837d50f4 data/createarmoredblocks/loot_tables/blocks/cast_iron_armor_block.json
+6f4bd3c4a6d3d40cdd713dbcfc3d8506ce01dfdc data/minecraft/tags/blocks/mineable/pickaxe.json
+6f4bd3c4a6d3d40cdd713dbcfc3d8506ce01dfdc data/minecraft/tags/blocks/needs_iron_tool.json

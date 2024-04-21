@@ -25,4 +25,5 @@ public class CABBlocks {
             .item()
             .build()
             .register();
+    public static void register() {};
 }
