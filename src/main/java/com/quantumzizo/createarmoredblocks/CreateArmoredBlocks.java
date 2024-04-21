@@ -1,6 +1,8 @@
 package com.quantumzizo.createarmoredblocks;
 
 import com.mojang.logging.LogUtils;
+import com.quantumzizo.createarmoredblocks.index.CABBlocks;
+import com.quantumzizo.createarmoredblocks.index.CABCreativeTab;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -21,6 +23,6 @@ public class CreateArmoredBlocks {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        if(REGISTRATE.isInCreativeTab(CABBlocks.CAST_IRON_ARMOR_BLOCK, CABCreativeTab.BASE)) LOGGER.debug("Cast Iron Armor has been registered to creative tab 'BASE'");
     }
 }

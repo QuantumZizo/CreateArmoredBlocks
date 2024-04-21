@@ -150,7 +150,7 @@ repositories {
         url "https://maven.realrobotix.me/ritchiesprojectilelib"
     }
     flatDir {
-        dirs 'run/external-dependencies'
+        dirs 'build/external-dependencies'
         content {
             includeGroup 'local'
         }
@@ -176,7 +176,7 @@ dependencies {
     implementation fg.deobf("local:create_dd:1.20.1-0.2c.PREBETA") // Using a local copy because there is no Maven.
 
     // Create Big Cannons (for testing the blocks)
-    // implementation "com.rbasamoyai:createbigcannons-forge-${minecraft_version}:${create_big_cannons_version}"
+    // implementation fg.deobf("com.rbasamoyai:createbigcannons-forge-${minecraft_version}:${create_big_cannons_version}")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
