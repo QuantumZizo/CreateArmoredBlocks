@@ -141,6 +141,20 @@ repositories {
         name = "ModMaven"
         url = "https://modmaven.dev"
     }
+    maven {
+        name "realrobotix"
+        url "https://maven.realrobotix.me/createbigcannons"
+    }
+    maven {
+        name "realrobotix"
+        url "https://maven.realrobotix.me/ritchiesprojectilelib"
+    }
+    flatDir {
+        dirs 'run/external-dependencies'
+        content {
+            includeGroup 'local'
+        }
+    }
 }
 
 dependencies {
@@ -154,12 +168,15 @@ dependencies {
     runtimeOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}"))
 
     // Create (required)
-    implementation fg.deobf("com.simibubi.create:create-${create_minecraft_version}:${create_version}:slim") { transitive = false }
-    implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-${flywheel_minecraft_version}:${flywheel_version}")
+    implementation fg.deobf("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
+    implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-${minecraft_version}:${flywheel_version}")
     implementation fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
 
+    // Create: Dreams & Desires (required)
+    implementation fg.deobf("local:create_dd:1.20.1-0.2c.PREBETA") // Using a local copy because there is no Maven.
+
     // Create Big Cannons (for testing the blocks)
-    implementation fg.deobf("curse.maven:create-big-cannons-646668:5000116")
+    // implementation "com.rbasamoyai:createbigcannons-forge-${minecraft_version}:${create_big_cannons_version}"
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
@@ -173,7 +190,7 @@ tasks.withType(ProcessResources).configureEach {
             loader_version_range: loader_version_range,
             mod_id              : mod_id, mod_name: mod_name, mod_license: mod_license, mod_version: mod_version,
             mod_authors         : mod_authors, mod_description: mod_description, pack_format_number: pack_format_number,
-            create_version_range : create_version_range
+            create_version_range : create_version_range, create_dd_version_range : create_dd_version_range
     ]
     inputs.properties replaceProperties
 
