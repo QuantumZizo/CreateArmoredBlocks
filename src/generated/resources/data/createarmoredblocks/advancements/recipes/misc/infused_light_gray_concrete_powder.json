@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cast_iron_armor_block": {
+    "has_infused_light_gray_concrete_powder": {
       "conditions": {
         "items": [
           {
             "items": [
-              "createarmoredblocks:cast_iron_armor_block"
+              "createarmoredblocks:infused_light_gray_concrete_powder"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "createarmoredblocks:cast_iron_armor_block"
+        "recipe": "createarmoredblocks:infused_light_gray_concrete_powder"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_cast_iron_armor_block",
+      "has_infused_light_gray_concrete_powder",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "createarmoredblocks:cast_iron_armor_block"
+      "createarmoredblocks:infused_light_gray_concrete_powder"
     ]
   },
   "sends_telemetry_event": false

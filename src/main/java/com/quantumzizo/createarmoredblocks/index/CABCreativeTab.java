@@ -24,7 +24,7 @@ public class CABCreativeTab {
     private static final DeferredRegister<CreativeModeTab> TAB_REGISTER = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CreateArmoredBlocks.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> BASE = TAB_REGISTER.register("base", () -> CreativeModeTab.builder()
-            .icon(CABBlocks.CAST_IRON_ARMOR_BLOCK::asStack)
+            .icon(CABBlocks.WORKABLE_IRON_BLOCK::asStack)
             .title(Component.translatable("creativetab.base"))
             .displayItems(new RegistrateDisplayItemsGenerator())
             .build());

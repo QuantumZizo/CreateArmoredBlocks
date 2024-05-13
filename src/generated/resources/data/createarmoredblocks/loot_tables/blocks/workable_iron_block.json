@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "createarmoredblocks:cast_iron_armor_block"
+          "name": "createarmoredblocks:workable_iron_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "createarmoredblocks:blocks/cast_iron_armor_block"
+  "random_sequence": "createarmoredblocks:blocks/workable_iron_block"
 }

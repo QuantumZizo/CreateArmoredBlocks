@@ -1,7 +1,6 @@
 {
-  "block.createarmoredblocks.cast_iron_armor_block": "Cast Iron Armor Block",
   "block.createarmoredblocks.infused_light_gray_concrete": "Infused Light Gray Concrete",
   "block.createarmoredblocks.infused_light_gray_concrete_powder": "Infused Light Gray Concrete Powder",
-
+  "block.createarmoredblocks.workable_iron_block": "Block of Workable Iron",
   "creativetab.base": "Create Armored Blocks"
 }

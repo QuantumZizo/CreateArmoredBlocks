@@ -1,12 +1,13 @@
 package com.quantumzizo.createarmoredblocks.datagen.recipe;
 
 import com.quantumzizo.createarmoredblocks.index.CABBlocks;
+import com.simibubi.create.AllItems;
+import com.tterrag.registrate.util.entry.BlockEntry;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.FinishedRecipe;
-import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.ShapedRecipeBuilder;
-import net.minecraft.world.item.Items;
+import net.minecraft.data.recipes.*;
+import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FallingBlock;
 
 import java.util.function.Consumer;
 
@@ -17,13 +18,13 @@ public class CABRecipeProvider extends RecipeProvider {
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CABBlocks.CAST_IRON_ARMOR_BLOCK.get())
-                .define('I', Items.IRON_BLOCK)
-                .define('D', Items.DEEPSLATE)
-                .pattern("III")
-                .pattern("IDI")
-                .pattern("III")
-                .unlockedBy(getHasName(CABBlocks.CAST_IRON_ARMOR_BLOCK.get()), has(CABBlocks.CAST_IRON_ARMOR_BLOCK.get()))
-                .save(consumer);
+        infusedConcreteRecipe(CABBlocks.INFUSED_LIGHT_GRAY_CONCRETE_POWDER, Blocks.LIGHT_GRAY_CONCRETE_POWDER).save(consumer);
+    }
+
+    private ShapelessRecipeBuilder infusedConcreteRecipe(BlockEntry<FallingBlock> infusedConcretePowder, ItemLike baseConcretePowder) {
+        return ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, infusedConcretePowder.get(), 2)
+                .requires(AllItems.POWDERED_OBSIDIAN.get())
+                .requires(baseConcretePowder)
+                .unlockedBy(getHasName(infusedConcretePowder.get()), has(infusedConcretePowder.get()));
     }
 }
