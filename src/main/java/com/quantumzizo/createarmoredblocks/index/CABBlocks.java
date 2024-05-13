@@ -20,11 +20,11 @@ public class CABBlocks {
             .lang("Block of Workable Iron")
             .simpleItem()
             .register();
-    public static BlockEntry<FallingBlock> INFUSED_LIGHT_GRAY_CONCRETE_POWDER = REGISTRATE.block("infused_light_gray_concrete_powder", FallingBlock::new)
+    public static final BlockEntry<FallingBlock> INFUSED_LIGHT_GRAY_CONCRETE_POWDER = REGISTRATE.block("infused_light_gray_concrete_powder", FallingBlock::new)
             .initialProperties(() -> Blocks.LIGHT_GRAY_CONCRETE_POWDER)
             .simpleItem()
             .register();
-    public static BlockEntry<Block> INFUSED_LIGHT_GRAY_CONCRETE = REGISTRATE.block("infused_light_gray_concrete", Block::new)
+    public static final BlockEntry<Block> INFUSED_LIGHT_GRAY_CONCRETE = REGISTRATE.block("infused_light_gray_concrete", Block::new)
             .initialProperties(() -> Blocks.LIGHT_GRAY_CONCRETE)
             .properties(p -> p.strength(11.0F))
             .tag(BlockTags.MINEABLE_WITH_PICKAXE)
