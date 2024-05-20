@@ -1,6 +1,12 @@
 {
   "block.createarmoredblocks.infused_light_gray_concrete": "Infused Light Gray Concrete",
   "block.createarmoredblocks.infused_light_gray_concrete_powder": "Infused Light Gray Concrete Powder",
-  "block.createarmoredblocks.workable_iron_block": "Block of Workable Iron",
-  "creativetab.base": "Create Armored Blocks"
+  "block.createarmoredblocks.quenched_steel_block": "Quenched Steel Block",
+  "block.createarmoredblocks.quenched_steel_slab": "Quenched Steel Slab",
+  "block.createarmoredblocks.quenched_steel_stairs": "Quenched Steel Stairs",
+  "block.createarmoredblocks.workable_steel_block": "Block of Workable Steel",
+  "block.createarmoredblocks.workable_steel_slab": "Workable Steel Slab",
+  "block.createarmoredblocks.workable_steel_stairs": "Workable Steel Stairs",
+  "creativetab.base": "Create Armored Blocks",
+  "item.createarmoredblocks.hot_metal": "Hot Metal"
 }

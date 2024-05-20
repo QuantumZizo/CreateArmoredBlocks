@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_infused_light_gray_concrete_powder": {
+    "has_steel_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "createarmoredblocks:infused_light_gray_concrete_powder"
+              "create_dd:steel_ingot"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "createarmoredblocks:infused_light_gray_concrete_powder"
+        "recipe": "createarmoredblocks:crafting/armor_blocks/workable_steel_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_infused_light_gray_concrete_powder",
+      "has_steel_ingot",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "createarmoredblocks:infused_light_gray_concrete_powder"
+      "createarmoredblocks:crafting/armor_blocks/workable_steel_block"
     ]
   },
   "sends_telemetry_event": false

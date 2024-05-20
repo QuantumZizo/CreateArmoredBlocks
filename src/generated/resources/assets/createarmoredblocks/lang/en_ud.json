@@ -1,6 +1,12 @@
 {
   "block.createarmoredblocks.infused_light_gray_concrete": "ǝʇǝɹɔuoƆ ʎɐɹ⅁ ʇɥbıꞀ pǝsnɟuI",
   "block.createarmoredblocks.infused_light_gray_concrete_powder": "ɹǝpʍoԀ ǝʇǝɹɔuoƆ ʎɐɹ⅁ ʇɥbıꞀ pǝsnɟuI",
-  "block.createarmoredblocks.workable_iron_block": "uoɹI ǝןqɐʞɹoM ɟo ʞɔoןᗺ",
-  "creativetab.base": "sʞɔoןᗺ pǝɹoɯɹⱯ ǝʇɐǝɹƆ"
+  "block.createarmoredblocks.quenched_steel_block": "ʞɔoןᗺ ןǝǝʇS pǝɥɔuǝnὉ",
+  "block.createarmoredblocks.quenched_steel_slab": "qɐןS ןǝǝʇS pǝɥɔuǝnὉ",
+  "block.createarmoredblocks.quenched_steel_stairs": "sɹıɐʇS ןǝǝʇS pǝɥɔuǝnὉ",
+  "block.createarmoredblocks.workable_steel_block": "ןǝǝʇS ǝןqɐʞɹoM ɟo ʞɔoןᗺ",
+  "block.createarmoredblocks.workable_steel_slab": "qɐןS ןǝǝʇS ǝןqɐʞɹoM",
+  "block.createarmoredblocks.workable_steel_stairs": "sɹıɐʇS ןǝǝʇS ǝןqɐʞɹoM",
+  "creativetab.base": "sʞɔoןᗺ pǝɹoɯɹⱯ ǝʇɐǝɹƆ",
+  "item.createarmoredblocks.hot_metal": "ןɐʇǝW ʇoH"
 }

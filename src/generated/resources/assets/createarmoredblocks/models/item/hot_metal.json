@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "createarmoredblocks:item/hot_metal"
+  }
+}

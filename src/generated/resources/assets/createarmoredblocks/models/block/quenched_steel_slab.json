@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "createarmoredblocks:block/quenched_steel_block",
+    "side": "createarmoredblocks:block/quenched_steel_block",
+    "top": "createarmoredblocks:block/quenched_steel_block"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": {
+      "item": "createarmoredblocks:workable_steel_block"
+    }
+  },
+  "pattern": [
+    "S  ",
+    "SS ",
+    "SSS"
+  ],
+  "result": {
+    "count": 6,
+    "item": "createarmoredblocks:workable_steel_stairs"
+  },
+  "show_notification": true
+}

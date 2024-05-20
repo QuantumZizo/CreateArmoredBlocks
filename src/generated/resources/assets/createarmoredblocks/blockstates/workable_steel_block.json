@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "createarmoredblocks:block/workable_steel_block"
+    }
+  }
+}

@@ -3,7 +3,6 @@ package com.quantumzizo.createarmoredblocks.datagen;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.quantumzizo.createarmoredblocks.CreateArmoredBlocks;
-import com.quantumzizo.createarmoredblocks.datagen.recipe.CABRecipeProvider;
 import com.simibubi.create.foundation.utility.FilesHelper;
 import com.tterrag.registrate.providers.ProviderType;
 import net.minecraft.core.HolderLookup;
@@ -16,6 +15,7 @@ import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.BiConsumer;
 
+@SuppressWarnings({"all"})
 public class CABDataGenerators {
     public static void gatherData(GatherDataEvent event) {
         addExtraRegistrateData();
@@ -26,13 +26,11 @@ public class CABDataGenerators {
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 
         if (event.includeServer()) {
-            generator.addProvider(true, new CABRecipeProvider(output));
+
         }
     }
 
     public static void addExtraRegistrateData() {
-        CABTags.addGenerators();
-
         CreateArmoredBlocks.REGISTRATE.addDataGenerator(ProviderType.LANG, provider -> {
             BiConsumer<String, String> langConsumer = provider::add;
 

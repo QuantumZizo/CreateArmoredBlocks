@@ -1,6 +1,11 @@
 {
   "values": [
-    "createarmoredblocks:workable_iron_block",
+    "createarmoredblocks:workable_steel_block",
+    "createarmoredblocks:workable_steel_stairs",
+    "createarmoredblocks:workable_steel_slab",
+    "createarmoredblocks:quenched_steel_block",
+    "createarmoredblocks:quenched_steel_stairs",
+    "createarmoredblocks:quenched_steel_slab",
     "createarmoredblocks:infused_light_gray_concrete"
   ]
 }

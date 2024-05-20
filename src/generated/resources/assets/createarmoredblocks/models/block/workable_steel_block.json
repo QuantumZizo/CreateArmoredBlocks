@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "createarmoredblocks:block/workable_iron_block"
+    "all": "createarmoredblocks:block/workable_steel_block"
   }
 }

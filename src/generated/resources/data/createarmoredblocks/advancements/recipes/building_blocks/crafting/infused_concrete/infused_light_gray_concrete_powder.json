@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_light_gray_concrete_powder": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:light_gray_concrete_powder"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_powdered_obsidian": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "create:powdered_obsidian"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "createarmoredblocks:crafting/infused_concrete/infused_light_gray_concrete_powder"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_light_gray_concrete_powder",
+      "has_powdered_obsidian",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "createarmoredblocks:crafting/infused_concrete/infused_light_gray_concrete_powder"
+    ]
+  },
+  "sends_telemetry_event": false
+}

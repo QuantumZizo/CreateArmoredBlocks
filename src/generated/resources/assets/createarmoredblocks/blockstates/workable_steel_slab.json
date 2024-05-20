@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "createarmoredblocks:block/workable_steel_slab"
+    },
+    "type=double": {
+      "model": "createarmoredblocks:block/workable_steel_block"
+    },
+    "type=top": {
+      "model": "createarmoredblocks:block/workable_steel_slab_top"
+    }
+  }
+}
